@@ -4,11 +4,11 @@ require "pry"
 
 # def random_number
 #   rand(1..6)
-# end  
+# end
 
 # def prompt_user
 #   puts "Guess a random number between 1 and 6"
-# end  
+# end
 
 # def get_user_input
 #   gets.chomp
@@ -21,20 +21,20 @@ require "pry"
 #     puts "You guessed the corret number!"
 #   when "exit"
 #     puts "Goodbye!"
-#   else  
+#   else
 #     puts "Sorry! The computer guessed #{num}"
-#   end   
-# end  
+#   end
+# end
 
 def run_guessing_game
   puts "Guess a number between 1 and 6"
   num = rand(1..6)
   input = gets.chomp
-  if input == num.to_s 
+  if input == num.to_s
     puts "You guessed the correct number!"
   elsif input == "exit"
     puts "Goodbye!"
   else
     puts "Sorry! The computer guessed #{num}."
-  end  
-end 
+  end
+end
